@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./img/folha.png" type="image/x-icon">
+    <title>Sistema de Estufa</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho_folha">
+            <img class="folha_animada" src="./img/Folha Animada.gif" alt="Folha">
+            <img class="folha_animada" src="./img/Folha Animada.gif" alt="Folha">
+            <img class="folha_animada" src="./img/Folha Animada.gif" alt="Folha">
+            <img class="folha_animada" src="./img/Folha Animada.gif" alt="Folha">
+        </div>
+        <h1 class="titulo_cabecalho">Painel de Controle</h1>
+        <div class="cabecalho_folha">
+            <img class="folha_animada" src="./img/Folha Animada.gif" alt="Folha">
+            <img class="folha_animada" src="./img/Folha Animada.gif" alt="Folha">
+            <img class="folha_animada" src="./img/Folha Animada.gif" alt="Folha">
+            <img class="folha_animada" src="./img/Folha Animada.gif" alt="Folha">
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <h2 class="padraoh2">Monitoramento Atual</h2>
+        <div id="alarme" class="alarme oculto">
+            <p id="mensagem-alarme"></p>
+        </div>        
+        <!-- Seção de Monitoramento -->
+        <div class="dashboard">
+            <div class="card temperatura">
+                <div>
+                    <h2>Temperatura</h2>
+                    <div class="info">
+                        <p class="valor">0°C</p>
+                        <p class="status">Estável</p>
+                    </div>
+                </div>
+                <img class="imagem_ilustrativa" src="./img/Icone - Quente.png" alt="Icone Quente">
+            </div>
+            <div class="card umidade">
+                <div>
+                    <h2>Umidade</h2>
+                    <div class="info">
+                        <p class="valor">0%</p>
+                        <p class="status">Moderada</p>
+                    </div>
+                </div>
+                <img class="imagem_ilustrativa" src="./img/Icone - Umidade.png" alt="Icone Umidade">
+            </div>
+            <div class="card luz">
+                <div>
+                    <h2>Luz</h2>
+                    <div class="info">
+                        <p class="valor">0 lux</p>
+                        <p class="status">Suficiente</p>
+                    </div>
+                </div>
+                <img class="imagem_ilustrativa" src="./img/Icone - Luz.png" alt="Icone Luz">
+            </div>
+        </div>
+
+        <!-- Seção de Controle Manual -->
+        <h2 class="padraoh2 ajuste">Controles</h2>
+        <div class="dashboard controle_manual">
+            <div class="card" id="gif-container">
+                <img class="imagem_ilustrativa_manual" src="./img/Ventilador - Icone.gif" alt="icone Ventilador">
+                <div>
+                    <h2 class="padraoh2">Ventilação</h2>
+                    <button id="botao_ventilação" class="estilo_btn">Desligado</button>
+                </div>
+            </div>
+            <div class="card">
+                <img class="imagem_ilustrativa_manual" src="./img/Iluminação - Icone.gif" alt="icone Ventilador">
+                <div>
+                    <h2 class="padraoh2">Iluminação</h2>
+                    <button id="botao_iluminacao" class="estilo_btn">Desligado</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <h2 class="titulo_rodape">© Copyright 2024 - Thiago. All rights reserved.</h2>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/simulador.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.cabecalho {
+    background: url(../img/Background\ -\ header.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 1rem 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.25rem solid var(--cor-seagreen);
+}
+
+.cabecalho_folha {
+    display: flex;
+    gap: 3rem;
+}
+
+.titulo_cabecalho {
+    font-size: 2rem;
+    color: var(--cor-seagreen);
+    font-weight: 800;
+}
+
+.folha_animada {
+    width: 2.5rem;
+}
+
+@media screen and (max-width: 670px) {
+    .cabecalho {
+        justify-content: center;
+        padding: 1rem 0rem;
+    }
+
+    .titulo_cabecalho {
+        font-size: 1rem;
+        text-wrap: nowrap;
+    }
+
+    .cabecalho_folha {
+        display: none;
+    }
+
+    .folha_animada {
+        width: 1.5rem;
+    }
+}

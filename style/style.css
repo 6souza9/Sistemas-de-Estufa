@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(./reset.css); @import url(./header.css); @import url(./main.css); @import url(./footer.css);
+
+:root {
+    --fonte-principal: 'Roboto';
+    --cor-seagreen: #2E8B57;
+    --cor-mint-cream: #dcf0e9;
+    --cor-verde-claro: #39ff8f;
+    --amarelo-ambiente: #ffeb3b;
+    --laranja-claro: #fb8c00;
+    --laranja-medio: #ffa319;
+    --cor-preto: #333;
+    --cor-laranja: #e64a19;
+    --azul-claro: #bbdefb;
+    --azul-medio: #2196F3;
+    --azul-escuro: #2222ce;
+    --cor-branca: white;
+    --desligado: rgb(255, 30, 30);
+    --alerta: rgb(228, 51, 51);
+    --cinza: rgb(87, 87, 87);
+    --cinza-escuro: rgb(43, 43, 43);
+}
+
+body {
+    background-image: url(../img/Background\ -\ Estufa.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: var(--fonte-principal);
+}
